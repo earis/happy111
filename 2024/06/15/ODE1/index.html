@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>ODE1 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="ODE复习 1.Liouvile 公式$$\frac{dx}{dt} &#x3D; A(t)x\consider \ the\ det\phi,where\ \phi \ is  \ a\ solution\ of\ the\ eqation\ above\\frac{d(det\phi)}{dt} &#x3D; \sum_{k &#x3D; 1}^{n}\begin{vmatrix}\phi_{">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ODE1">
+<meta property="og:url" content="http://example.com/2024/06/15/ODE1/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="ODE复习 1.Liouvile 公式$$\frac{dx}{dt} &#x3D; A(t)x\consider \ the\ det\phi,where\ \phi \ is  \ a\ solution\ of\ the\ eqation\ above\\frac{d(det\phi)}{dt} &#x3D; \sum_{k &#x3D; 1}^{n}\begin{vmatrix}\phi_{">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-06-15T08:58:21.000Z">
+<meta property="article:modified_time" content="2024-06-17T02:54:26.997Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="math">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-ODE1" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/06/15/ODE1/" class="article-date">
+  <time class="dt-published" datetime="2024-06-15T08:58:21.000Z" itemprop="datePublished">2024-06-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      ODE1
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>ODE复习</p>
+<p>1.Liouvile 公式<br>$$<br>\frac{dx}{dt} &#x3D; A(t)x\<br>consider \ the\ det\phi,where\ \phi \ is  \ a\ solution\ of\ the\ eqation\ above\<br>\frac{d(det\phi)}{dt} &#x3D; \sum_{k &#x3D; 1}^{n}\begin{vmatrix}<br>\phi_{11} &amp; \phi_{12} &amp; \frac{d\phi_{1k}}{dt}… &amp; \phi_{1n} \<br>\phi_{21}&amp; \phi_{22} &amp; \frac{d\phi_{1k}}{dt}… &amp; \phi_{2n} \<br>\vdots &amp;&amp;&amp;\vdots\<br>\phi_{n1}&amp; \phi_{n2} &amp;\frac{d\phi_{1k}}{dt}…&amp;\phi_{nn} \<br>\end{vmatrix}\&#x3D;<br>\sum_{k &#x3D; 1}^{n}\begin{vmatrix}<br>\phi_{11} &amp; \phi_{12} &amp; \sum_{j&#x3D;1}^{n}a_{1j}\phi_{jk}… &amp; \phi_{1n} \<br>\phi_{21}&amp; \phi_{22} &amp;\sum_{j&#x3D;1}^{n}a_{2j}\phi_{jk}… &amp; \phi_{2n} \<br>\vdots &amp;&amp;&amp;\vdots\<br>\phi_{n1}&amp; \phi_{n2} &amp;\sum_{j&#x3D;1}^{n}a_{nj}\phi_{jk}…&amp;\phi_{nn} \<br>\end{vmatrix}\&#x3D;<br>\sum_{k &#x3D; 1}^{n}\begin{vmatrix}<br>\phi_{11} &amp; \phi_{12} &amp; \sum_{j&#x3D;1}^{n}a_{1j}\phi_{jk}… &amp; \phi_{1n} \<br>\phi_{21}&amp; \phi_{22} &amp;\sum_{j&#x3D;1}^{n}a_{2j}\phi_{jk}… &amp; \phi_{2n} \<br>\vdots &amp;&amp;&amp;\vdots\<br>\phi_{n1}&amp; \phi_{n2} &amp;\sum_{j&#x3D;1}^{n}a_{nj}\phi_{jk}…&amp;\phi_{nn} \<br>\end{vmatrix}\&#x3D;<br>\sum_{i &#x3D; 1}^{n}\begin{vmatrix}<br>a_{11} &amp; a_{12} &amp; \frac{da_{1k}}{dt}… &amp; a_{1n} \<br>a_{21}&amp; a_{22} &amp; \frac{da_{1k}}{dt}… &amp; a_{2n} \<br>\vdots &amp;&amp;&amp;\vdots\<br>a_{n1}&amp; a_{n2} &amp;\frac{da_{1k}}{dt}…&amp;a_{nn} \<br>\end{vmatrix}<br>$$</p>
+<p>$$<br>\frac{d(det\phi)}{dt} &#x3D; \sum_{k &#x3D; 1}^{n}\begin{vmatrix}<br>\phi_{11}&amp;\phi_{12}&amp;…&amp;\phi{1n}\<br>\vdots&amp;&amp;&amp;\vdots\<br>\frac{d\phi_{k1}}{dt}&amp;\frac{d\phi_{k2}}{dt}&amp;…&amp; \frac{d\phi_{kn}}{dt}\<br>\vdots&amp;&amp;&amp;\vdots\<br>\phi_{n1}&amp;\phi_{n2}&amp;…&amp;\phi_{nn}<br>\end{vmatrix}<br>\&#x3D;\sum_{k&#x3D;1}^{n}\begin{vmatrix}\<br>\phi_{11}&amp;\phi_{12}&amp;…&amp;\phi_{1n}\<br>\vdots&amp;&amp;&amp;\vdots\<br>\sum_{j &#x3D; 1}^{n}a_{kj}\phi_{j1}&amp; \sum_{j &#x3D; 1}^{n}a_{kj}\phi_{j2}&amp;…&amp; \sum_{j&#x3D;1}^{n}a_{kj}\phi_{jn}\<br>\vdots&amp;&amp;&amp;\vdots\<br>\phi_{n1}&amp;\phi_{n2}&amp;…&amp;\phi_{nn}<br>\end{vmatrix}\&#x3D;<br>\sum_{k &#x3D; 1}^{n}\begin{vmatrix}\</p>
+<p>\phi_{11}&amp;\phi_{12}&amp;…&amp;\phi_{1n}\<br>\vdots&amp;&amp;&amp;\vdots\<br>a_{kk}\phi_{k1}&amp; a_{kk}\phi_{k2}&amp;…&amp; a_{kk}\phi_{kn}\<br>\vdots&amp;&amp;&amp;\vdots\<br>\phi_{n1}&amp;\phi_{n2}&amp;…&amp;\phi_{nn}<br>\end{vmatrix}<br>\&#x3D;\sum_{k &#x3D; 1}^{n}a_{kk}det(\phi)\<br>thus \ we\ have\ \det(\phi) &#x3D; Ce^{\int_{t_0}^{t}{\sum_{k &#x3D; 1}^{n}a_{kk}(s)ds}}<br>$$</p>
+<p>从Liouvile 公式 可见，如果，两个解$\phi_1,\phi_2$如果在一点相关，($C &#x3D; 0$)那么在所有的点都相关（$det(\phi) &#x3D; 0$）。</p>
+<p>2.Euler Equation<br>$$<br>x^n\frac{d^{(n)}y}{dx} + a_{n-1}x^{n-1}\frac{d^{(n-1)}y}{dx} + …+a_0y &#x3D; f(x)<br>\let\ x &#x3D; e^{t}<br>\we \ have\ \frac{dy}{dx} &#x3D; \frac{dy}{d{(e^{t})}} &#x3D; e^{-t}\frac{dy}{dt}<br>\\frac{d^2y^{}}{dx^{2}} &#x3D; \frac{d}{de^t}(e^{-t}\frac{dy}{dt}) &#x3D; e^{-t}\frac{d}{dt}(e^{-t}\frac{dy}{dt})\&#x3D;<br>e^{-t}(-e^{-t})\frac{dy}{dt} + e^{-2t}\frac{d^2y}{dt^{2}}<br>\…\thus\ we\ can\ acquire\ the\ equation \ to\<br>\frac{d^{n}y}{dt} + b_{n-1}\frac{d^{n-1}y}{dt} + …+b_0y &#x3D; f(x)\<br>$$<br>3.已知一个解，求另一个解<br>$$<br>y^{\prime\prime} + ay^{\prime} + by &#x3D; f(x)\<br>we\ hope\ to \ find\ another\ solution\ if \ we\ already\ knows\ a\ nonzero\\ solution\ \phi(x)\ of\ the \ corresponding\ homogeneous\ equation<br>\we \ consider\ the \ C(x)\phi(x),\ get\ \<br>C^{\prime\prime}(x)\phi(x) + 2C^{\prime}(x)\phi^{\prime}(x)+  \ aC^{\prime}(x) \phi(x) +C(x)(\phi^{\prime\prime}(x) + a\phi^{\prime}(x) + b\phi(x)) &#x3D; f(x)\<br>C^{\prime\prime}(x) + (2\frac{\phi^{\prime}(x)}{\phi(x)} + a(x))C^{\prime}(x)  &#x3D; \frac{f(x)}{\phi(x)}<br>\C^{\prime} &#x3D; e^{\int_{x_0}^{x}-(2\frac{\phi^{\prime}(s)}{\phi(s)} + a(s) )ds}(\int_{x_0}^{x}\frac{f(s)}{\phi(s)} e^{\int_{x_0}^{s}(2\frac{\phi^{\prime}(t)}{\phi(t)} + a(t))dt}ds + \hat C) \ &#x3D;<br>\frac{1}{\phi^{2}(x)}e^{-\int_{x_0}^xa(s)ds}(\int_{x_0}^{x}f(s)\phi(s)e^{\int_{x_0}^{s}a(t)dt}ds + \hat C)<br>$$<br>4.To find the corresponding solution of the non-homogeneous equation, we use the constant-changing method<br>$$<br>let\ \frac{dy}{dx} &#x3D; A(x)y \ be\ the \ corresponding\ equation\ of \<br>\frac{dy}{dx} &#x3D; A(x)y + f(x),\ and \ \Phi(x) \ the\ solution\ of \ the\ former\<br>we\ set\ \Psi(x) &#x3D; \Phi(x)C(x)  \<br>now \ \Phi(x)C^{\prime}(x) &#x3D; f(x)<br>\ C(x) &#x3D; \int_{x_{0}}^{x}\Phi^{-1}(s)f(s)ds + \hat C<br>\since \ \Phi ^{-1}(s)f(s) &#x3D;\begin{bmatrix} \frac{W_1}{det(\Phi)} &amp;…&amp;\frac{W_n}{det(\Phi)}  \end{bmatrix}\<br>where\ W_i &#x3D; \begin{vmatrix}<br>\phi_1 &amp;…\phi_{i-1}&amp;f&amp;\phi_{i+1}…&amp;\phi_{n}<br>\end{vmatrix}<br>\\Psi(x) &#x3D; \Phi(x)(\int_{x_0}^{x} \begin{bmatrix} \frac{W_1}{det(\Phi)} &amp;…&amp;\frac{W_n}{det(\Phi)}\end{bmatrix}ds + \hat C)<br>$$<br>5.This time we discuss the Constant-parameter high-dimension equation<br>$$<br>\frac{dx}{dt} &#x3D; Ax\ where \ A\ Constant\ matrix\<br>A &#x3D; \begin{bmatrix}3&amp;-2&amp;-1\3&amp;-4&amp;-3\2&amp;-4&amp; 0\end{bmatrix}<br>\det(\lambda I - A) &#x3D; \begin{vmatrix}<br>\lambda - 3&amp;2&amp;1\<br>-3&amp;\lambda+4&amp;3\<br>-2&amp; 4 &amp;\lambda<br>\end{vmatrix}\ &#x3D; (\lambda -3)(\lambda + 4)\lambda - 2(-3\lambda +  6) + (-3 \times4 + 2(\lambda + 4))\<br>&#x3D;(\lambda-3)((\lambda + 4)\lambda-12) +6(\lambda-2)+(2\lambda-4)<br>\&#x3D;(\lambda-2)(\lambda-3)(\lambda + 6) + 8(\lambda -2) \&#x3D;(\lambda-2)(\lambda^{2}+ 3\lambda-10)<br>\ &#x3D; (\lambda-2)^{2}(\lambda+5) \<br>\lambda &#x3D; 2:A - \lambda I &#x3D; \begin{bmatrix} 1 &amp;-2&amp;-1\3&amp;-6&amp;-3\2&amp;-4&amp;-2 \end{bmatrix} \to \begin{bmatrix}2\1\0\end{bmatrix},\begin{bmatrix}1\0\1\end{bmatrix}<br>\\lambda &#x3D; -5:A -\lambda I &#x3D;  \begin{bmatrix}8&amp;-2&amp;-1\3&amp;1&amp;-3\2&amp;-4&amp;5\end{bmatrix} \to<br>\begin{bmatrix}1\3\2\end{bmatrix}<br>thus\ we\ have\<br>\\begin{bmatrix}2&amp;1&amp;1\1&amp;0&amp;3\0&amp;1&amp;2\end{bmatrix}\begin{bmatrix}e^{2t}&amp;0&amp;0\0&amp;e^{2t}&amp;0\0&amp;0&amp;e^{-5t}\end{bmatrix} &#x3D; \begin{bmatrix}2e^{2t}&amp;e^{2t}&amp;e^{-5t}\e^{2t}&amp;0&amp;3e^{&#x3D;5t}\0&amp;e^{2t}&amp;2e^{-5t}\end{bmatrix}\<br>solution:\ C_1\begin{bmatrix}2e^{2t}\e^{2t}\0\end{bmatrix}+ C_2\begin{bmatrix}e^{2t}\0\e^{2t}\end{bmatrix} +  C_3\begin{bmatrix}e^{-5t}\3e^{-5t}\2e^{-5t}\end{bmatrix}<br>$$</p>
+<p>5.Solve<br>$$<br>y^{\prime\prime} + 4y &#x3D; 2tanx\<br>solution.Eigenequation:\lambda^{2} + 4 &#x3D; 0 \Rightarrow \lambda &#x3D; \pm2i<br>\y &#x3D; C_1sin2x + C_2cos2x<br>\y^{\prime\prime} + 4y &#x3D; C_1^{\prime}(-2cos2x) + C_2^{\prime}(2sin2x) &#x3D; 2tanx<br>\let\ C_1^{\prime}(sin2x)  + C_2^{\prime}<br>$$<br>6.A problem.<br>$$<br>let\ \phi(x) \ be \ a\ solution\ of \ y^{\prime\prime} + q(x)y &#x3D; 0,\ where\ q(x)\ increases\ strictly\ and\ positive.<br>\1)prove\ that\ zeros \ of\ \phi\ \ {x_i} \ satisfy\<br>x_{n} - x_{n-1} &gt; x_{n+1} - x_{n}\<br>2)prove\ that\ b_{n} \ satisfies\ b_{n+1} &lt; b_{n}, where\ b_n \ &#x3D; \max_{[x_{n-1},x_{n}]}|\phi(x)|<br>\3)prove\ that\ \lim_{n\to \infty}b_n &gt; 0\ if \ \lim_{x\to \infty}q(x) &#x3D; C &lt; \infty.<br>$$</p>
+<p>$$<br>solution.1)\ consider\ z^{\prime\prime} + q(2x_n-x)z &#x3D; 0, z(x_n) &#x3D; 0\<br>easily\ seen\ q(2x_n-x) &gt; q(x) \ when\ x\ in\ [x_{n-1},x_{n}]\<br>from\ Sturm-Liouville\ Thm, we\ have\ that\ in [x_{n-1},x_n] \ there\ exists\ the\ nearest\ zero\ to\ x_n,   of\ the\  solution \ of\ second\ equation.\<br>\which \ is\ 2x_n - x_{n+1}.QED.<br>\2)This\ time\ we\ assume\ in [x_{n-1},x_{n}]\ \phi(x) &gt; 0;\<br>and\ assume\ that\ z\ satisfy\ the \ same\ equation\ as \ in \ 1)<br>\easily\ seen\ z &#x3D; -\phi(2x_n-x)\ satisfies\ it.<br>\now \ consider \ in\ [2x_n - x_{n+1},x_n],\<br>by\ multiplying\ z\ with\ the\ first\ equation\ ,y \ with\ the\ second\ equation\ and\ subtracting\ them\<br>we\ have\<br>(y^{\prime}z - z^{\prime}y)^\prime &#x3D; (q(2x_n - x) - q(x))yz &gt;0\<br>since\ (y^{\prime}z - z^{\prime}y) &#x3D; 0\ at\ x_n,we\ get\<br>(y^{\prime}z - z^{\prime}y) &lt; 0\<br>thus\ (\frac{y}{z})^{\prime} &lt; 0\ thus\ \frac{y}{z} &gt;\frac{y}{z}|<em>{x &#x3D; x_n}&#x3D; \frac{}{}.<br>\if \ b_n &gt; b</em>{n-1}, we\ have\ \frac{y}{z}<br>$$</p>
+<p>$$</p>
+<p>$$</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/06/15/ODE1/" data-id="clxidto3e0000n0va2pi90xwj" data-title="ODE1" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/math/" rel="tag">math</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2024/06/17/Leukemia/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Leukemia
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2024/06/15/myMedicalAssiant/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">myMedicalAssiant</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Computer-Medcine/" rel="tag">Computer&#x2F;Medcine</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Medcine/" rel="tag">Medcine</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/article/" rel="tag">article</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/math/" rel="tag">math</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pectoris/" rel="tag">pectoris</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pregnance/" rel="tag">pregnance</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Computer-Medcine/" style="font-size: 10px;">Computer/Medcine</a> <a href="/tags/Medcine/" style="font-size: 20px;">Medcine</a> <a href="/tags/article/" style="font-size: 10px;">article</a> <a href="/tags/math/" style="font-size: 10px;">math</a> <a href="/tags/pectoris/" style="font-size: 10px;">pectoris</a> <a href="/tags/pregnance/" style="font-size: 10px;">pregnance</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/06/">June 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/05/">May 2024</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2024/06/17/Sports/">Sports</a>
+          </li>
+        
+          <li>
+            <a href="/2024/06/17/Leukemia/">Leukemia</a>
+          </li>
+        
+          <li>
+            <a href="/2024/06/15/ODE1/">ODE1</a>
+          </li>
+        
+          <li>
+            <a href="/2024/06/15/myMedicalAssiant/">myMedicalAssiant</a>
+          </li>
+        
+          <li>
+            <a href="/2024/05/30/EMT-PREG/">EMT_PREG</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2024 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
